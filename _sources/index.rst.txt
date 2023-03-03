@@ -90,7 +90,9 @@ Website Content
    ./API/core-index
    ./API/containers-index
    ./API/algorithms-index
+   ./API/simd-index
    ./API/alphabetical
+   DeprecationPage
    known-issues
    usecases
    testing-and-issue-tracking

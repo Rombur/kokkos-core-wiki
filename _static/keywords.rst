@@ -103,7 +103,7 @@ Enable Options
       * Enable relocatable device code (RDC) for CUDA
       * ``OFF``
 
-    * * ``Kokkos_ENABLE_CUDA_UVM``
+    * * ``Kokkos_ENABLE_CUDA_UVM`` :red:`[Deprecated since 4.0]` see `Transition to alternatives <usecases/Moving_from_EnableUVM_to_SharedSpace.html>`_
       * Use unified memory (UM) by default for CUDA
       * ``OFF``
 
@@ -143,10 +143,6 @@ Enable Options
       * Perform extra large memory tests
       * ``OFF``
 
-    * * ``Kokkos_ENABLE_PROFILING``
-      * Create bindings for profiling tools
-      * ``ON``
-
     * * ``Kokkos_ENABLE_PROFILING_LOAD_PRINT``
       * Print information about which profiling tools got loaded
       * ``OFF``
@@ -154,24 +150,6 @@ Enable Options
     * * ``Kokkos_ENABLE_TESTS``
       * Build tests
       * ``OFF``
-
-.. _keywords_enable_other_options:
-
-Other Options
-=============
-
-.. list-table::
-    :widths: 25 50 25
-    :header-rows: 1
-    :align: left
-
-    * -
-      - Description/info
-      - Default
-
-    * * ``Kokkos_CXX_STANDARD``
-      * The C++ standard for Kokkos to use: c++14, c++17, or c++20. This should be given in CMake style as 14, 17, or 20.
-      * STRING Default: 14
 
 .. _keywords_tpls:
 
@@ -320,6 +298,10 @@ Architecture Keywords
       * Optimize for BGQ architecture
       * ``OFF``
 
+    * * ``Kokkos_ARCH_HOPPER90``
+      * Optimize for the NVIDIA Hopper generation CC 9.0 <sup>since Kokkos 4.0</sup>
+      * ``OFF``
+
     * * ``Kokkos_ARCH_HSW``
       * Optimize for HSW architecture
       * ``OFF``
@@ -364,6 +346,10 @@ Architecture Keywords
       * Optimize for MAXWELL53 architecture
       * ``OFF``
 
+    * * ``Kokkos_ARCH_NAVI1030`` :red:`[Since 4.0]`
+      * Optimize for AMD GPU V620/W6800 GFX1030
+      * ``OFF``
+
     * * ``Kokkos_ARCH_PASCAL60``
       * Optimize for PASCAL60 architecture
       * ``OFF``
@@ -396,7 +382,7 @@ Architecture Keywords
       * Optimize for TURING75 architecture
       * ``OFF``
 
-    * * ``Kokkos_ARCH_VEGA900``
+    * * ``Kokkos_ARCH_VEGA900`` :red:`[Removed in 4.0]`
       * Optimize for AMD GPU MI25 GFX900
       * ``OFF``
 
@@ -406,6 +392,10 @@ Architecture Keywords
 
     * * ``Kokkos_ARCH_VEGA908``
       * Optimize for AMD GPU MI100 GFX908
+      * ``OFF``
+
+    * * ``Kokkos_ARCH_VEGA90A``
+      * Optimize for AMD GPU MI200 series GFX90A
       * ``OFF``
 
     * * ``Kokkos_ARCH_VOLTA70``
