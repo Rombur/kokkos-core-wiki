@@ -562,16 +562,13 @@
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_DEPRECATION_WARNING</span></code></p></td>
 <td><p>Defined if deprecated features generate deprecation warnings.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_HBWSPACE</span></code></p></td>
-<td><p>Defined if the experimental <code class="docutils literal notranslate"><span class="pre">HBWSpace</span></code> memory space is enabled, enabled by KOKKOS_ENABLE_MEMKIND.</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_TUNING</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_TUNING</span></code></p></td>
 <td><p>Whether bindings for tunings are available (see <a class="reference external" href="https://github.com/kokkos/kokkos/pull/2422">#2422</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_COMPLEX_ALIGN</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_COMPLEX_ALIGN</span></code></p></td>
 <td><p>Whether complex types are aligned.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_AGGRESSIVE_VECTORIZATION</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_AGGRESSIVE_VECTORIZATION</span></code></p></td>
 <td><p>Whether certain dependency assumptions are ignored for aggressive vectorization of internal Kokkos loops.</p></td>
 </tr>
 </tbody>
@@ -694,17 +691,15 @@ Kokkos was compiled with.</p>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_HWLOC</span></code></p></td>
 <td><p>Defined if <a class="reference external" href="https://www.open-mpi.org/projects/hwloc/">libhwloc</a> is enabled for NUMA and architecture information.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_LIBRT</span></code></p></td>
-<td><p>Defined if Kokkos links to the POSIX librt for backwards compatibility.</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_MEMKIND</span></code></p></td>
-<td><p>Defined if Kokkos enables the <a class="reference external" href="https://github.com/memkind/memkind">Memkind</a> heap manager, enables HBWSpace.</p></td>
-</tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_LIBDL</span></code></p></td>
 <td><p>Defined if Kokkos links to the dynamic linker (libdl).</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_LIBQUADMATH</span></code></p></td>
 <td><p>Defined if Kokkos links to the <a class="reference external" href="https://gcc.gnu.org/onlinedocs/libquadmath/">GCC Quad-Precision Math Library API</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ENABLE_ONEDPL</span></code></p></td>
+<td><p>Defined if Kokkos links to the <a class="reference external" href="https://github.com/oneapi-src/oneDPL">oneDPL library</a> when using the SYCL backend.
+Enabling this TPL might affect performance for Kokkos algorithms that use it, e.g., <cite>sort</cite>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -720,41 +715,35 @@ Kokkos was compiled with.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_SSE42</span></code></p></td>
-<td><p>Optimize for SSE 4.2</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV80</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV80</span></code></p></td>
 <td><p>Optimize for ARMv8.0 Compatible CPU (HOST)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV8_THUNDERX</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV8_THUNDERX</span></code></p></td>
 <td><p>Optimize for ARMv8 Cavium ThunderX CPU (HOST)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV81</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV81</span></code></p></td>
 <td><p>Optimize for ARMv8.1 Compatible CPU (HOST)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV8_THUNDERX2</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_ARMV8_THUNDERX2</span></code></p></td>
 <td><p>Optimize for ARMv8 Cavium ThunderX2 CPU (HOST)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AMD_AVX2</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AMD_AVX2</span></code></p></td>
 <td><p>Optimize for AVX2 (enabled for Zen)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX</span></code></p></td>
 <td><p>Optimize for AVX</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX2</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX2</span></code></p></td>
 <td><p>Optimize for AVX2</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX512XEON</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX512XEON</span></code></p></td>
 <td><p>Optimize for Skylake(AVX512)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_KNC</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_KNC</span></code></p></td>
 <td><p>Optimize for Intel Knights Corner Xeon Phi (HOST)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX512MIC</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_AVX512MIC</span></code></p></td>
 <td><p>Optimize for Many Integrated Core (MIC; AVX512)</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_POWER7</span></code></p></td>
-<td><p>Optimize for IBM POWER7 CPUs (HOST)</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">KOKKOS_ARCH_POWER8</span></code></p></td>
 <td><p>Optimize for IBM POWER8 CPUs (HOST)</p></td>
