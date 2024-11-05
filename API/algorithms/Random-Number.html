@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     <link rel="stylesheet" type="text/css" href="../../_static/hacks.css" />
     
@@ -157,6 +158,7 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../quick_start.html">Quick Start</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../programmingguide.html">Programming Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../ProgrammingGuide/Introduction.html">1. Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ProgrammingGuide/Machine-Model.html">2. Machine Model</a></li>
@@ -327,7 +329,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../containers/ScatterView.html"><code class="docutils literal notranslate"><span class="pre">ScatterView</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../containers/StaticCrsGraph.html"><code class="docutils literal notranslate"><span class="pre">StaticCrsGraph</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../containers/Unordered-Map.html"><code class="docutils literal notranslate"><span class="pre">UnorderedMap</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../containers/vector.html"><code class="docutils literal notranslate"><span class="pre">vector</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../containers/vector.html"><code class="docutils literal notranslate"><span class="pre">vector</span></code> [DEPRECATED]</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../algorithms-index.html">API: Algorithms</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
@@ -405,7 +407,7 @@
 <li class="toctree-l4"><a class="reference internal" href="std-algorithms/all/StdTransformInclusiveScan.html"><code class="docutils literal notranslate"><span class="pre">transform_inclusive_scan</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="std-algorithms/StdPartioningOps.html">Partitioning</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="std-algorithms/StdPartitioningOps.html">Partitioning</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="std-algorithms/all/StdIsPartitioned.html"><code class="docutils literal notranslate"><span class="pre">is_partitioned</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="std-algorithms/all/StdPartitionPoint.html"><code class="docutils literal notranslate"><span class="pre">partition_point</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="std-algorithms/all/StdPartitionCopy.html"><code class="docutils literal notranslate"><span class="pre">partition_copy</span></code></a></li>
@@ -433,7 +435,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../usecases/MPI-Halo-Exchange.html">MPI Halo Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../usecases/Average-To-Nodes.html">ScatterView averaging elements to nodes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../usecases/MDRangePolicy.html">MDRangePolicy Use Case</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../usecases/VirtualFunctions.html">Virtual Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../usecases/TaggedOperators.html">Tagged Operators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../usecases/OverlappingHostAndDeviceWork.html">Overlapping Host and Device work</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../usecases/Tasking.html">Kokkos Tasking Use Case</a></li>
@@ -467,6 +468,10 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../templates/index.html">Documentation Templates</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../templates/class_api.html">Class API Template</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../developer-guides/index.html">Developer Guides</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developer-guides/prs-and-reviews.html">PRs and Reviews</a></li>
 </ul>
 </li>
 </ul>
@@ -522,7 +527,7 @@
 <h1>Random-Number<a class="headerlink" href="#random-number" title="Permalink to this heading">#</a></h1>
 <section id="rand">
 <h2>Rand<a class="headerlink" href="#rand" title="Permalink to this heading">#</a></h2>
-<p>Header Files: <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_core.hpp&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_Complex.hpp&gt;</span></code></p>
+<p>Header Files: <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_Core.hpp&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_Random.hpp&gt;</span></code></p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">Generator</span><span class="o">&gt;</span>
 <span class="k">struct</span><span class="w"> </span><span class="nc">rand</span><span class="o">&lt;</span><span class="n">Generator</span><span class="p">,</span><span class="w"> </span><span class="n">gen_data_type</span><span class="o">&gt;</span>
 <span class="p">{</span>
@@ -636,7 +641,7 @@ All functions and classes listed here are part of the <code class="docutils lite
 </section>
 <section id="generator">
 <h1>Generator<a class="headerlink" href="#generator" title="Permalink to this heading">#</a></h1>
-<p>Header Files: <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_core.hpp&gt;</span></code> <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_Complex.hpp&gt;</span></code></p>
+<p>Header Files: <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_Core.hpp&gt;</span></code> <code class="docutils literal notranslate"><span class="pre">&lt;Kokkos_Random.hpp&gt;</span></code></p>
 <section id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this heading">#</a></h2>
 <p>Kokkos_Random provides the structure necessary for pseudorandom number generators. These generators are based on Vigna, Sebastiano (2014). [<em>“An experimental exploration of Marsaglia’s xorshift generators, scrambled.” See: http://arxiv.org/abs/1402.6246</em>].</p>
@@ -663,9 +668,9 @@ are collectives, i.e. all functions can be called inside conditionals.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>A Pool of Generators are intialized using a starting seed and establishing
+<p>A Pool of Generators are initialized using a starting seed and establishing
 a pool_size of num_states. The Random_XorShift64 generator is used in serial
-to initialize all states making the intialization process platform independent
+to initialize all states making the initialization process platform independent
 and deterministic. Requesting a generator locks it’s state guaranteeing that
 each thread has a private (independent) generator. (Note, getting a state on a Cuda
 device involves atomics, making it non-deterministic!)
@@ -776,7 +781,7 @@ The first, and default, option selects unsigned integers over max possible range
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2014, National Technology &amp; Engineering Solutions of Sandia, LLC (NTESS)
+                Copyright &#169; 2024, National Technology &amp; Engineering Solutions of Sandia, LLC (NTESS)
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -830,5 +835,6 @@ The first, and default, option selects unsigned integers over max possible range
     <script src="../../_static/scripts/furo.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     </body>
 </html>
